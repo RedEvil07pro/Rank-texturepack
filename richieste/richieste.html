@@ -17,29 +17,24 @@
     <section id="richieste">
         <h2>Fai la tua richiesta</h2>
         <form action="submit_richiesta.php" method="POST">
-            <label for="nome">Nome e Cognome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="nome_sito">Nome del Sito:</label>
-            <input type="text" id="nome_sito" name="nome_sito" required>
-
-            <label for="sviluppatore">Scegli uno sviluppatore:</label>
-            <select id="sviluppatore" name="sviluppatore" required>
-                <option value="sviluppatore1">Filippo</option>
-                <option value="sviluppatore2">Leonardo</option>
-            </select>
-
-            <label for="hosting">Vuoi anche l'hosting?</label>
-            <select id="hosting" name="hosting" required>
-                <option value="no">Solo creazione sito</option>
-                <option value="si">Crea e ospita il sito</option>
-            </select>
-
-            <label for="descrizione">Descrizione dettagliata del sito:</label>
-            <textarea id="descrizione" name="descrizione" rows="5" required></textarea>
-
-            <button type="submit">Invia Richiesta</button>
-        </form>
+    <label for="nome">Nome e Cognome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <label for="nome_sito">Nome del Sito:</label>
+    <input type="text" id="nome_sito" name="nome_sito" required>
+    <label for="sviluppatore">Sviluppatore:</label>
+    <select id="sviluppatore" name="sviluppatore" required>
+        <option value="dev1">Dev 1</option>
+        <option value="dev2">Dev 2</option>
+    </select>
+    <label for="hosting">Hosting:</label>
+    <select id="hosting" name="hosting" required>
+        <option value="solo_sito">Solo Creazione</option>
+        <option value="sito_e_hosting">Sito e Hosting</option>
+    </select>
+    <label for="descrizione">Descrizione:</label>
+    <textarea id="descrizione" name="descrizione" required></textarea>
+    <button type="submit">Invia Richiesta</button>
+</form>
     </section>
 
 </body>
