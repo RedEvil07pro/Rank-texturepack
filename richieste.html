@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creazione Siti Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pagina Home -->
+    <section id="home">
+        <h1>Benvenuto su Creazione Siti Web!</h1>
+        <p>Richiedi la creazione del tuo sito web personalizzato o il nostro servizio di hosting.</p>
+    </section>
+
+    <!-- Pagina Richieste -->
+    <section id="richieste">
+        <h2>Fai la tua richiesta</h2>
+        <form action="submit_richiesta.php" method="POST">
+            <label for="nome">Nome e Cognome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="nome_sito">Nome del Sito:</label>
+            <input type="text" id="nome_sito" name="nome_sito" required>
+
+            <label for="sviluppatore">Scegli uno sviluppatore:</label>
+            <select id="sviluppatore" name="sviluppatore" required>
+                <option value="sviluppatore1">Filippo</option>
+                <option value="sviluppatore2">Leonardo</option>
+            </select>
+
+            <label for="hosting">Vuoi anche l'hosting?</label>
+            <select id="hosting" name="hosting" required>
+                <option value="no">Solo creazione sito</option>
+                <option value="si">Crea e ospita il sito</option>
+            </select>
+
+            <label for="descrizione">Descrizione dettagliata del sito:</label>
+            <textarea id="descrizione" name="descrizione" rows="5" required></textarea>
+
+            <button type="submit">Invia Richiesta</button>
+        </form>
+    </section>
+
+</body>
+</html>
